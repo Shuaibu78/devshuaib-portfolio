@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shuaibu Muhammad | Software Engineer</title>
     <meta name="description" content="Portfolio of Shuaibu Muhammad — Software Engineer specialized in Node.js, React, TypeScript, Next.js, and scalable systems on AWS." />
-    <meta name="keywords" content="Shuaibu Muhammad, Software Engineer, Node.js, React, TypeScript, Next.js, AWS, Portfolio" />
+    <meta name="keywords" content="Shuaibu Muhammad, Engineering Manager, Software Engineer, Node.js, React, TypeScript, Next.js, AWS, Portfolio" />
     <meta name="author" content="Shuaibu Muhammad" />
     <meta name="robots" content="index, follow" />
     <meta name="application-name" content="Shuaibu Muhammad Portfolio" />
@@ -14,7 +14,7 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Shuaibu Muhammad | Software Engineer" />
+    <meta property="og:title" content="Shuaibu Muhammad | Lead Fullstack Software Engineer" />
     <meta property="og:description" content="Software Engineer focused on building reliable, scalable products across web, mobile, and desktop." />
     <meta property="og:image" content="https://media.pictify.io/vzyqr-1758529115383.png" />
 
@@ -31,13 +31,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Shuaibu Muhammad",
-      "jobTitle": "Software Engineer",
+      "jobTitle": "Lead Fullstack Software Engineer",
       "sameAs": [
         "https://github.com/shuaibu78",
         "https://www.linkedin.com/in/devshuaib/"
@@ -45,246 +50,378 @@
     }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans">
-    <header class="bg-white shadow p-4">
+    <header class="bg-white shadow-md p-4 sticky top-0 z-50 border-b border-gray-200">
       <div class="max-w-5xl mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold">Shuaibu Muhammad</h1>
         <nav>
-          <a href="#projects" class="text-blue-600 hover:underline mr-4"
-            >Projects</a
+          <a href="#skills" class="text-blue-600 hover:text-blue-800 transition-colors mr-4"
+            >Skills</a
           >
-          <a href="#experience" class="text-blue-600 hover:underline mr-4"
+          <a href="#experience" class="text-blue-600 hover:text-blue-800 transition-colors mr-4"
             >Experience</a
           >
-          <a href="#contact" class="text-blue-600 hover:underline">Contact</a>
+          <a href="#projects" class="text-blue-600 hover:text-blue-800 transition-colors mr-4"
+            >Projects</a
+          >
+          <a href="#contact" class="text-blue-600 hover:text-blue-800 transition-colors">Contact</a>
         </nav>
       </div>
     </header>
 
     <main class="max-w-5xl mx-auto px-6 py-10">
       <!-- Intro -->
-      <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-4">Hi, I'm Shuaibu 👋</h2>
-        <p class="text-lg leading-relaxed">
-          Software Engineer with 7 years of experience developing and scaling web, mobile, and desktop applications. 
-          Expert in <strong>Node.js, React.js, TypeScript, Next.js, MongoDB, and AWS services</strong>, including ECS and Lambda. 
-          Proven ability to deliver mission-critical features in distributed, cross-functional teams. 
-          Passionate about clean architecture, CI/CD automation, and building systems that scale to millions of users.
-        </p>
+      <section class="mb-16">
+        <div class="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+          <h2 class="text-4xl font-bold mb-6 text-gray-900">Hi, I'm Shuaibu 👋</h2>
+          <div class="space-y-4 text-gray-700">
+            <p class="text-lg leading-relaxed">
+              Innovative <span class="font-semibold text-gray-900">Engineering Leader</span> and <span class="font-semibold text-gray-900">Fullstack Architect</span> with over <span class="font-semibold text-blue-600">8 years of experience</span> designing, scaling, and leading the development of high-performance SaaS, FinTech, Healthtech, and Retail platforms.
+            </p>
+            <p class="text-lg leading-relaxed">
+              Expert in <span class="font-semibold text-gray-900">Python, Golang, TypeScript, React, Next.js, Node.js (NestJS/Express)</span>, and <span class="font-semibold text-gray-900">AWS cloud architecture</span>, with a proven record of building secure, compliant, and data-driven systems serving <span class="font-semibold text-blue-600">60k+ active users</span>.
+            </p>
+            <p class="text-lg leading-relaxed">
+              Strong background in technical leadership, system architecture, and cross-functional collaboration, driving engineering excellence through mentorship, modern DevOps, and security-focused design. Passionate about leveraging technology to build resilient and scalable digital ecosystems that empower businesses and communities.
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- Skills Section -->
-      <section class="mb-12">
-        <h3 class="text-2xl font-semibold mb-6">🚀 Skills</h3>
-        <div class="flex flex-wrap gap-3 mb-2">
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">React.js</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Next.js</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Node.js</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Golang</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">PHP</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Express.js</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">PostgreSQL</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">MongoDB</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">MySQL</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">SQLite</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">TypeScript</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Tailwind CSS</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">HTML5</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">CSS3</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">JavaScript</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Material UI</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Chakra UI</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">ShadCN</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Styled Component</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Redux</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Framer Motion</span>
-          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Figma</span>
+      <section id="skills" class="mb-12">
+        <h3 class="text-2xl font-semibold mb-6 uppercase tracking-wide">Core Skills</h3>
+        <div class="space-y-6">
+          <!-- Technical Leadership -->
+          <div class="border-b border-gray-200 pb-4">
+            <h4 class="font-bold text-lg mb-2">
+              <span class="text-blue-600">➤</span> Technical Leadership:
+            </h4>
+            <p class="text-gray-700 leading-relaxed">
+              Mentorship, team scaling, agile process management, architectural reviews
+            </p>
+          </div>
+
+          <!-- System Architecture -->
+          <div class="border-b border-gray-200 pb-4">
+            <h4 class="font-bold text-lg mb-2">
+              <span class="text-blue-600">➤</span> System Architecture:
+            </h4>
+            <p class="text-gray-700 leading-relaxed">
+              Microservices, event-driven design, distributed systems, performance optimization
+            </p>
+          </div>
+
+          <!-- Backend Engineering -->
+          <div class="border-b border-gray-200 pb-4">
+            <h4 class="font-bold text-lg mb-2">
+              <span class="text-blue-600">➤</span> Backend Engineering:
+            </h4>
+            <p class="text-gray-700 leading-relaxed">
+              Node.js, NestJS, Express.js, Golang, Python, Mongodb, REST, GraphQL, MysQL, PostgreSQL, Redis, RabbitMQ
+            </p>
+          </div>
+
+          <!-- Frontend Engineering -->
+          <div class="border-b border-gray-200 pb-4">
+            <h4 class="font-bold text-lg mb-2">
+              <span class="text-blue-600">➤</span> Frontend Engineering:
+            </h4>
+            <p class="text-gray-700 leading-relaxed">
+              React, Next.js, React Native, TypeScript, Zustand, Redux, TanStack Query, Remix, Svelte
+            </p>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="border-b border-gray-200 pb-4">
+            <h4 class="font-bold text-lg mb-2">
+              <span class="text-blue-600">➤</span> Cloud & DevOps:
+            </h4>
+            <p class="text-gray-700 leading-relaxed">
+              AWS (ECS, EC2, RDS, S3, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions, GitLab CI)
+            </p>
+          </div>
+
+          <!-- Security & Compliance -->
+          <div class="border-b border-gray-200 pb-4">
+            <h4 class="font-bold text-lg mb-2">
+              <span class="text-blue-600">➤</span> Security & Compliance:
+            </h4>
+            <p class="text-gray-700 leading-relaxed">
+              OAuth2/JWT, CBN & PCI-DSS standards, data encryption, fraud prevention
+            </p>
+          </div>
+
+          <!-- FinTech Focus Areas -->
+          <div class="pb-4">
+            <h4 class="font-bold text-lg mb-2">
+              <span class="text-blue-600">➤</span> FinTech Focus Areas:
+            </h4>
+            <p class="text-gray-700 leading-relaxed">
+              Payments, billing automation, POS integrations, user identity verification (KYC/AML)
+            </p>
+          </div>
         </div>
-        <!-- update description based on skills -->
-        <p class="text-gray-700 text-sm">Proficient in modern design tools and methodologies, with a focus on creating intuitive user interfaces and seamless user experiences.</p>
       </section>
 
       <!-- Projects -->
       <section id="projects" class="mb-12">
-        <h3 class="text-2xl font-semibold mb-6">🧩 Projects</h3>
-        <div class="grid gap-6">
+        <h3 class="text-2xl font-semibold mb-6 uppercase tracking-wide">Featured Projects</h3>
+        <div class="space-y-6">
+          
           <!-- Timart AI Assistant (WhatsApp) -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Timart AI Assistant (WhatsApp)</h4>
-            <p>
-              Manage your business seamlessly via WhatsApp. Automate sales, inventory, and support with AI-powered chat.
+          <div class="bg-white border-l-4 border-blue-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Timart AI Assistant</h4>
+              <span class="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-semibold">WhatsApp AI</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Revolutionary AI-powered WhatsApp assistant that enables business owners to manage their entire retail operations through conversational chat. Features voice commands for product creation, automated inventory updates, sales tracking, and intelligent customer support. Built with Node.js, OpenAI APIs, and WhatsApp Business API, serving thousands of merchants across emerging markets.
             </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Node.js</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">OpenAI</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">WhatsApp API</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Voice Recognition</span>
+            </div>
             <a
               href="https://wa.me/message/H7JG7JOA2GVUM1"
               target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
               >Try on WhatsApp →</a
             >
           </div>
 
           <!-- Timart Desktop App -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Timart Desktop App</h4>
-            <p>
-              B2B inventory, invoicing, and sales management platform. Offline-first desktop app for Timart with real-time sync.
+          <div class="bg-white border-l-4 border-green-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Timart Desktop App</h4>
+              <span class="text-xs bg-green-100 text-green-800 px-3 py-1 rounded-full font-semibold">Desktop</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Enterprise-grade B2B inventory and sales management platform designed for high-volume retail operations. Features offline-first architecture with real-time synchronization, multi-store management, advanced reporting, payment, and POS hardware integration. Built with Electron, React, Node.js, Golang, and TypeScript, leveraging Sqlite for local storage and WebSockets for seamless cloud sync. Handles 100,000+ transactions daily across 60,000+ active stores.
             </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Electron</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">React</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">TypeScript</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Sqlite</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">WebSocket</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Node.js</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Golang</span>
+            </div>
             <a
               href="https://gettimart.com/download"
               target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >Download Desktop App →</a
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
+              >Download for Windows/Mac →</a
             >
           </div>
 
           <!-- Timart Mobile App -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Timart Mobile App</h4>
-            <p>
-              Inventory management, invoicing, and sales management platform. Offline-first mobile app for Timart with real-time sync.
+          <div class="bg-white border-l-4 border-purple-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Timart Mobile App</h4>
+              <span class="text-xs bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-semibold">Mobile</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Cross-platform mobile application enabling on-the-go business management for retail merchants. Features barcode scanning, receipt generation, inventory tracking, sales analytics, and customer management. Built with Flutter and optimized for both REST and GraphQL APIs, supporting offline mode with automatic sync when connectivity is restored. Over 5,000+ active merchants use the app daily.
             </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Flutter</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Dart</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">REST API</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">GraphQL</span>
+            </div>
             <a
               href="https://play.google.com/store/apps/details?id=com.quicktelsolution.quick_manager&hl=en_US&gl=US"
               target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
               >Get on Google Play →</a
             >
           </div>
 
-          <!-- Timart (Main Landing Page) -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Timart</h4>
-            <p>
-              Main landing page for Timart's B2B commerce suite.
-            </p>
-            <a
-              href="https://gettimart.com/"
-              target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >Visit Timart →</a
-            >
-          </div>
-
           <!-- Asibitina -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Asibitina</h4>
-            <p>
-              Streamlining healthcare management, making it easier to manage patient care, optimize workflows, and enhance overall efficiency. From advanced scheduling tools to real-time data access, we provide the solutions you need to simplify operations and improve outcomes.
+          <div class="bg-white border-l-4 border-red-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Asibitina HealthTech Platform</h4>
+              <span class="text-xs bg-red-100 text-red-800 px-3 py-1 rounded-full font-semibold">HealthTech</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Comprehensive healthcare management system streamlining patient care delivery and hospital operations. Features include electronic health records (EHR), appointment scheduling, real-time patient monitoring, prescription management, and automated billing. Built with React, Next.js, and Node.js, integrated with HIPAA-compliant cloud infrastructure. Serving multiple healthcare facilities with enhanced workflow efficiency and data-driven decision making.
             </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">React</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Next.js</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Node.js</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">PostgreSQL</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">AWS</span>
+            </div>
             <a
               href="https://freestate.asibitina.com/"
               target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >Visit Asibitina →</a
-            >
-          </div>
-
-          <!-- Paritie -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Paritie</h4>
-            <p>
-              Website showing co-working and branding services. Contributed to website and open-source code refactoring, improving maintainability.
-            </p>
-            <a
-              href="https://paritie.com/"
-              target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >Visit Paritie →</a
-            >
-          </div>
-
-          <!-- Colenco Consulting -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Colenco Consulting</h4>
-            <p>
-              Corporate site for a consulting firm. Developed a corporate website that increased client inquiries by 15%.
-            </p>
-            <a
-              href="https://colencoconsulting.com/"
-              target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >Visit Colenco →</a
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
+              >Visit Platform →</a
             >
           </div>
 
           <!-- Iturah Health -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Iturah Health</h4>
-            <p>
-              Health platform connecting users to medical professionals. Streamlined diagnostics and virtual consultations, improving care response by 30%.
+          <div class="bg-white border-l-4 border-teal-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Iturah Health</h4>
+              <span class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full font-semibold">Telemedicine</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Modern telemedicine platform connecting patients with licensed medical professionals for virtual consultations. Features video conferencing via Zoom SDK, secure payment processing through Paystack, prescription management, and automated appointment reminders. Built with React, TypeScript, Django, and PostgreSQL. Improved healthcare accessibility by 30% and reduced patient wait times through streamlined virtual diagnostics.
             </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">React</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Django</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Zoom SDK</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Paystack</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">PostgreSQL</span>
+            </div>
             <a
               href="https://www.iturah.health/"
               target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >Visit Iturah →</a
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
+              >Visit Platform →</a
+            >
+          </div>
+
+          <!-- Colenco Consulting -->
+          <div class="bg-white border-l-4 border-indigo-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Colenco Consulting</h4>
+              <span class="text-xs bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-semibold">Corporate</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Professional corporate website for a leading consulting firm, showcasing services, case studies, and client testimonials. Features responsive design, SEO optimization, contact forms with email automation, and CMS integration for easy content updates. Built with Next.js and Tailwind CSS. The modern, conversion-focused design increased client inquiries by 15% and improved brand visibility in the professional services sector.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Next.js</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Tailwind CSS</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">SEO</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">CMS</span>
+            </div>
+            <a
+              href="https://colencoconsulting.com/"
+              target="_blank"
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
+              >Visit Website →</a
+            >
+          </div>
+
+          <!-- Paritie -->
+          <div class="bg-white border-l-4 border-yellow-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Paritie</h4>
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-semibold">Co-working</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Modern website for co-working space and branding services, featuring interactive space booking, membership management, and virtual tours. Contributed to open-source codebase refactoring, implementing best practices for code maintainability and scalability. Built with HTML, CSS, JavaScript, Tailwind CSS, LottieFiles, and AOS, integrated with payment gateways and booking management systems. Enhanced user experience with smooth animations and intuitive navigation.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">HTML</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">CSS</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">JavaScript</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Tailwind CSS</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">LottieFiles</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">AOS</span>
+            </div>
+            <a
+              href="https://paritie.com/"
+              target="_blank"
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
+              >Visit Website →</a
             >
           </div>
 
           <!-- Hafiz-al-Quran Test -->
-          <div class="bg-white p-4 rounded shadow transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-            <h4 class="text-lg font-semibold">Hafiz-al-Quran Test</h4>
-            <p>
-              Built a Quran testing app to support memorization and recitation practice.
+          <div class="bg-white border-l-4 border-emerald-600 p-6 rounded-r-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="flex items-start justify-between mb-3">
+              <h4 class="text-xl font-bold text-gray-900">Hafiz-al-Quran Test</h4>
+              <span class="text-xs bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-semibold">Education</span>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Mobile application designed to support Quran memorization and recitation practice for students and learners. Features include progress tracking, customizable test sessions, verse-by-verse review, audio recitation playback, and performance analytics. Built with Flutter to ensure cross-platform compatibility. Helps thousands of users worldwide strengthen their memorization through structured practice and repetition.
             </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Flutter</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Dart</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Audio Processing</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Local Storage</span>
+            </div>
             <a
               href="https://play.google.com/store/apps/details?id=com.bynalab.hafiz_test&pcampaignid=web_share"
               target="_blank"
-              class="text-blue-600 hover:underline text-sm mt-2 inline-block"
-              >Try Hafiz Test →</a
+              class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center"
+              >Download on Google Play →</a
             >
           </div>
+
         </div>
       </section>
 
       <!-- Experience -->
       <section id="experience" class="mb-12">
-        <h3 class="text-2xl font-semibold mb-6">💼 Work Experience</h3>
+        <h3 class="text-2xl font-semibold mb-6 uppercase tracking-wide">Experience</h3>
 
-        <div class="mb-6">
+        <div class="mb-8">
           <h4 class="font-bold text-lg">
-            Timart — Software Engineer
-            <span class="text-sm text-gray-500">(Aug 2020 - Present)</span>
+            Timart — Lead Fullstack Software Engineer | Engineering Manager
           </h4>
-          <ul class="list-disc pl-5 text-sm mt-2 space-y-1">
-            <li>Built and scaled multi-platform retail systems used by 50,000+ users, with a strong focus on backend reliability.</li>
-            <li>Architected event-driven microservices using Node.js, MySQL, and Redis, deployed on AWS ECS </li>
-            <li>Integrated OpenAI APIs for voice-enabled product creation, enhancing accessibility.</li>
-            <li>Reduced API latency by 43% through optimized I/O operations and caching strategies.</li>
-            <li>Automated CI/CD pipelines via Docker and GitHub Actions, cutting deployment time by 30%.</li>
-            <li>Implemented desktop-first offline mode with socket-based synchronization.</li>
-            <li>Integrated POS systems into the business management application, resulting in a measurable increase in customer acquisition and operational efficiency.</li>
-            <li>Built mobile apps using Flutter and optimized them for REST/GraphQL APIs.</li>
-            <li>Led the development of a modular design system, increasing code reusability and UI consistency by 47% across multiple applications.</li>
+          <p class="text-sm text-gray-500 mb-3">Aug 2020 - Nov 2025</p>
+          <ul class="list-disc pl-5 text-sm mt-2 space-y-2">
+            <li>Spearheaded the development of multi-tenant retail and FinTech systems serving over 60,000+ active users monthly.</li>
+            <li>Led a team of engineers, driving code quality, testing standards, and CI/CD automation.</li>
+            <li>Architected event-driven microservices (Node.js + Redis + PostgreSQL) deployed on AWS ECS, achieving 99.8% uptime.</li>
+            <li>Migrated performance-critical backend services from Node.js to Golang, improving throughput by 43%.</li>
+            <li>Implemented secure payment orchestration with Paystack & Flutterwave APIs for seamless retail transactions.</li>
+            <li>Designed fraud prevention logic and transactional logging mechanisms compliant with CBN and PCI-DSS standards.</li>
+            <li>Integrated AI-driven voice assistant for inventory and product creation, improving user accessibility.</li>
+            <li>Reduced API latency by 22% via caching, query optimization, and horizontal scaling strategies.</li>
+            <li>Built offline-first PWA mode with WebSocket sync for low-connectivity markets, increasing reliability by 37%.</li>
+            <li>Automated CI/CD pipelines using Docker and GitHub Actions, reducing deployment overhead by 30%.</li>
           </ul>
         </div>
 
-        <div class="mb-6">
+        <div class="mb-8">
           <h4 class="font-bold text-lg">
-            Iturah — Senior Frontend Developer
-            <span class="text-sm text-gray-500">(Dec 2021 - Aug 2022)</span>
+            Iturah — Fullstack Developer (Frontend Focused)
           </h4>
-          <ul class="list-disc pl-5 text-sm mt-2 space-y-1">
-            <li>Collaborated in a distributed team across 3 countries to deliver healthcare platform features.</li>
-            <li>Implemented CI/CD pipelines using GitHub Actions for consistent testing and delivery.</li>
-            <li>Built backend-facing frontend features in TypeScript and integrated Zoom, Paystack, and custom APIs.</li>
-            <li>Contributed to an EHR platform with virtual consultation and payment systems.</li>
-            <li>Architected microservices using Django, MySQL, and deployed on AWS ECS.</li>
-            <li>Deployed UI components supporting real-time communication and payment flows, increasing user engagement by 40%.</li>
-
+          <p class="text-sm text-gray-500 mb-3">Dec 2021 - Aug 2022</p>
+          <ul class="list-disc pl-5 text-sm mt-2 space-y-2">
+            <li>Designed and implemented secure RESTful APIs with Django and PostgreSQL to support EHR and telemedicine operations.</li>
+            <li>Built dynamic medical dashboards and patient UIs with React, TypeScript, and Chakra UI, enabling real-time data visibility.</li>
+            <li>Integrated Zoom SDK for live consultations and Paystack for seamless medical billing and automated receipts.</li>
+            <li>Developed role-based access control (RBAC) and session management for patient and doctor authentication.</li>
+            <li>Improved system performance and reduced page load time by 35% through frontend optimization and API caching.</li>
           </ul>
         </div>
 
         <div>
           <h4 class="font-bold text-lg">
-            Paritie Dynamic Enterprise — JavaScript Developer
-            <span class="text-sm text-gray-500">(Oct 2018 - Mar 2020)</span>
+            Paritie Dynamic Enterprise Limited — JavaScript Developer
           </h4>
-          <ul class="list-disc pl-5 text-sm mt-2 space-y-1">
-            <li>Refactored backend logic and improved legacy API performance by 25%.</li>
-            <li>Wrote extensive unit tests with Jest, reaching 92% code coverage.</li>
-            <li>Mentored junior devs on Node.js and Express backend best practices.</li>
-
+          <p class="text-sm text-gray-500 mb-3">Oct 2017 - Mar 2020</p>
+          <ul class="list-disc pl-5 text-sm mt-2 space-y-2">
+            <li>Re-architected legacy systems into modern React + TypeScript applications, improving reliability and scalability.</li>
+            <li>Boosted development efficiency by achieving 92% test coverage using Jest and Cypress.</li>
+            <li>Mentored junior developers, reviewed pull requests, and guided adoption of Agile/Scrum methodologies.</li>
+            <li>Contributed to internal SaaS tools and frontend libraries used across multiple enterprise products.</li>
           </ul>
         </div>
       </section>
